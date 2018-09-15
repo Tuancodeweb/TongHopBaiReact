@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-sm navbar-dark mb-4" style="background-color: black; color: white">
+          <a class="navbar-brand" href="Fedu.vn">Fedu</a>
+          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+              <ul class="navbar-nav mt-2 mt-lg-0 ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">xem danh sách NOTE</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+      <!-- ket thuc menu top -->
+
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <div id="NoteList" role="tablist" aria-multiselectable="true">
+                      <div class="card">
+                          <div class="card-header" role="tab" id="note1">
+                              <h5 class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#NoteList" href="#noteContent1" aria-expanded="true" aria-controls="noteContent1">
+                            Date 10/7/2018
+                          </a>
+                              </h5>
+                          </div>
+                          <div id="noteContent1" class="collapse in" role="tabpanel" aria-labelledby="note1">
+                              <div class="card-body">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, maxime neque ipsa sed, ea, ab facere voluptatum nisi suscipit qui optio voluptate reiciendis repellendus vitae cupiditate? Iusto quibusdam numquam optio.
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="card">
+                        <div class="card-header" role="tab" id="note2">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#NoteList" href="#noteContent2" aria-expanded="true" aria-controls="noteContent2">
+                          Date 11/7/2018
+                        </a>
+                            </h5>
+                        </div>
+                        <div id="noteContent2" class="collapse in" role="tabpanel" aria-labelledby="note2">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, maxime neque ipsa sed, ea, ab facere voluptatum nisi suscipit qui optio voluptate reiciendis repellendus vitae cupiditate? Iusto quibusdam numquam optio.
+                            </div>
+                        </div>
+                    </div>
+
+
+                  </div>
+              </div>
+              <div class="col-4">
+                  <h3>SỬA NỘI DUNG</h3>
+                  <div class="form-group">
+                    <label for="NoteTitle">Tiêu đề node</label>
+                    <input type="text" class="form-control" name="NoteTitle" id="NoteTitle" aria-describedby="NoteNoteTitle" placeholder="Tiêu đề của note1">
+                    <small id="NoteNoteTitle" class="form-text text-muted">Điền tiêu đề vào đây</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="NoteTitle">Tiêu đề node</label>
+                    <textarea type="text" class="form-control" name="NoteTitle" id="NoteTitle" aria-describedby="NoteNoteTitle" placeholder="Tiêu đề của note1"></textarea>
+                    <small id="NoteNoteTitle" class="form-text text-muted">Điền nội dung vào đây</small>
+                  </div>
+
+                  <button type="submit" class="btn btn-warning btn-block">Lưu</button>
+              </div>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

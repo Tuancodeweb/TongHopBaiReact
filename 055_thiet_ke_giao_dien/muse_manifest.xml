@@ -1,0 +1,28 @@
+<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="fedu.vn" resolutions="1x" timestamp="1530524826303">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="348261715" ref="index"/>
+    <file name="sua.css" crc="169721692" ref="sua"/>
+    <file name="delete.css" crc="121572262" ref="delete"/>
+  </folder>
+  <folder name="assets">
+    <file name="website-2.muse" crc="4103823529" seo="true" mt="1530524040000"/>
+    <file name="website-2.edit.muse" crc="241091742" seo="true" mt="1530524066000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:sua:delete"/>
+    <file name="museutils.js" crc="3803043152" ref="index:sua:delete"/>
+    <file name="whatinput.js" crc="86476730" ref="index:sua:delete"/>
+    <file name="museconfig.js" crc="4153641093" ref="index:sua:delete"/>
+    <file name="jquery.watch.js" crc="99325471" ref="index:sua:delete"/>
+    <file name="require.js" crc="4157109226" ref="index:sua:delete"/>
+  </folder>
+  <folder name="images">
+    <file name="u140-6.png" crc="4217870265" ref="index"/>
+    <file name="u532-6.png" crc="4217870265" ref="sua"/>
+    <file name="u658-6.png" crc="4217870265" ref="delete"/>
+  </folder>
+  <file name="index.html" crc="4015214799" seo="true" mt="1530524364466" redirect="true"/>
+  <file name="sua.html" crc="448442168" seo="true" mt="1530524712113" redirect="true"/>
+  <file name="delete.html" crc="484084688" seo="true" mt="1530524418304" redirect="true"/>
+</manifest>

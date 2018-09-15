@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Battle City</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .svg {
+      display: block;
+      background: #757575;
+      user-select: none;
+      cursor: default;
+    }
+
+    .area-button {
+      fill: transparent;
+      cursor: pointer;
+      transition: stroke 250ms;
+    }
+
+    .area-button:hover {
+      stroke: #e91e63;
+    }
+
+    .text-area {
+      fill: transparent;
+      cursor: pointer;
+    }
+
+    .text-area:hover {
+      fill: #865b69;
+    }
+
+    .text-area.selected,
+    .text-area:active {
+      fill: #e91e63;
+    }
+
+    .text-area.disabled {
+      fill: transparent;
+      cursor: default;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>

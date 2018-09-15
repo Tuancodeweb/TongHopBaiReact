@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "name" : "Phan Kim Tuân",
+        "tel" : "01654665693",
+        "permission" : 1
+    },
+    {
+        "id" : 2,
+        "name" : "Nguyễn Thanh Tuân",
+        "tel" : "01654665693",
+        "permission" : 2
+    },
+    {
+        "id" : 3,
+        "name" : "Phan Kim Liên",
+        "tel" : "01654665693",
+        "permission" : 1
+    },
+    {
+        "id" : 4,
+        "name" : "Lưu Ngọc Hoa",
+        "tel" : "01654665693",
+        "permission" : 1
+    },
+    {
+        "id" : 5,
+        "name" : "Ngô Thị Thúy",
+        "tel" : "01654665693",
+        "permission" : 2
+    },
+    {
+        "id" : 6,
+        "name" : "Trần Văn Hùng",
+        "tel" : "01654665693",
+        "permission" : 3
+    },
+    {
+        "id" : 7,
+        "name" : "Phạm Xuân Hùng ",
+        "tel" : "01654665693",
+        "permission" : 1
+    },
+    {
+        "id" : 8,
+        "name" : "Phan Kim Tuân",
+        "tel" : "01654665693",
+        "permission" : 2
+    },
+    {
+        "id" : 9,
+        "name" : "Phan Kim Tuân",
+        "tel" : "01654665693",
+        "permission" : 1
+    },
+    {
+        "id" : 10,
+        "name":"Nguyễn Thanh Tuân",
+        "tel" :"0165445756e7",
+        "permission" : 1
+    }
+]
