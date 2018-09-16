@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form 1</title>
+    <style>
+        body{
+            max-width: 900px;
+            height: auto;
+            margin: 50px auto;
+            padding: 0px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 21px;
+            
+            background-repeat: no-repeat;
+        }
+        label{
+            width: 100px;
+            display: block;
+            float: left;
+            clear: left;
+            margin-right: 220px;
+        }
+        input{
+            margin-bottom: 12px;
+        }
+      .box_input_big{
+          display: block;
+      }
+      footer{
+          text-align: center;
+      }
+      footer > input{
+          width: 120px;
+          height: 50px;
+          box-shadow: 12px
+      }
+      .gt{
+          margin-right: 300px;
+      }
+      div{
+          margin-bottom: 10px;
+      }
+    
+    </style>
+</head>
+    <body>
+        <header>
+            <div>
+                <h3>Hãy nhập thông tin vào form đăng ký</h3>
+            </div>
+            <div>
+                <p>Với việc nhập các thông tin cá nhân và submit form , bạn đã đồng ý với các điều khoảng của trang web chúng tôi</p>
+            </div>
+        </header>
+        <main>
+            <form action="">
+
+            <div>
+                <label for="#">Tên đăng nhập: </label>
+                <input class="float_right" type="text" name="name_dn" style="width:200px; height: 20px;">
+            </div>
+            <div>
+                <label for="#">Họ Tên:</label>
+                <input class="float_right" type="text" name="nam_user"  style="width:200px; height: 20px;">
+            </div>
+            <div>
+                <label for="#">Mật khẩu</label>
+                <input class="float_right" type="passworld" name="passworld"  style="width:200px; height: 20px;">
+            </div>
+            <div>
+                <label for="#">Gõ lại</label>
+                <input class="float_right" type="passworld" name="passworld"  style="width:200px; height: 20px;">
+            </div>
+            <div>
+                <label for="#">Email</label>
+                <input class="float_right" type="text" name="mail" placeholder="Abv@Gmail.com"  style="width:200px; height: 20px;">
+            </div>
+            <div>
+                <label for="#">Giới tính</label>
+                <input  type="radio" name="gt"/><span>Nam</span>
+                <input  type="radio" name="gt"/><span>Nữ</span>
+            </div>
+            <div>
+            
+                <label for="#">Quê quán</label>
+                <select name="qq" class="float_right" style="width:200px; height: 20px;">
+                    <option value="1">THái nguyên</option>
+                    <option value="2">hà nội</option>
+                    <option value="3">hưng yên</option>
+                </select>
+            </div>
+           
+                <label for="#">Sở trường cv</label>
+                <textarea class="box_input_big" style="width: 100%; height: 140px; border-radius: 2px;"></textarea>
+                </table>
+
+                <div>
+                    <input type="checkbox">
+                    <span>Tôi đồng ý với điều khoản website</span>
+                </div>
+            </form>
+           
+        </main>
+        <footer>
+            <input type="submit" value="Create Account"/>
+            <input type="reset" value="Reset"/>
+        </footer>
+    </body>
+</html>

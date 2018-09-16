@@ -1,0 +1,7 @@
+- thẻ đơn
+    + được Html định nghĩa sẵn cùng như t/d
+    + <tên thẻ>
+    VD <br/> , <hr/>
+
+- cặp thẻ 
+    + thẻ <body></body>

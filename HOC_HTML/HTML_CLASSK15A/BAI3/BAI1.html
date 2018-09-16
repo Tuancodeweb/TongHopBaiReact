@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                margin: 50px auto;
+                padding:  0 auto;
+                background-color: azure;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 21px;
+                max-width: 900px;
+                height: auto;
+
+            }
+            legend{
+                margin-bottom: 45px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 28px;
+                font-style: italic;
+            }
+            label{
+                width: 230px;
+                display: block;
+                float: left;
+                clear: left;
+                margin-right: 20px;
+                margin-left: 70px;
+                line-height: 30px;
+            }
+            .submit_bt{background-color: green;}
+            div{
+                padding-bottom: 15px;
+
+            }
+            input , label{
+               height: 40px;
+               border-radius: 3px;
+               color: black;
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               
+            }
+            textarea{
+                border: 4px solid red;
+                height: 40px;
+               border-radius: 12px;
+            }
+            .submit{text-align: center; margin-left: 95px;}
+            span{display: block; text-align: left; font-style: italic; , font-size: 12px;}
+            fieldset{background-color: peachpuff; border: 4px solid gray ;  border-radius: 8px;}
+
+        </style>
+    </head>
+        <body>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Đăng kí thành viên</legend>
+                    <div>
+                            <label>Tên đăng nhập</label>
+                            <input type="text" name="DN" value="#" style="width:310px;" placeholder="Nhap thon tin vao day"/>
+                    </div>
+
+                    <div>
+                            <label>Mật khẩu</label>
+                            <input type="password" name="DN" value="#"  style="width:310px;" placeholder="Nhap thon tin vao day"/>
+                    </div>
+
+                    <div>
+                            <label>Xác nhận mật khẩu</label>
+                            <input type="password" name="DN" value="#"  style="width:310px;" placeholder="Nhap thon tin vao day"/>
+                    </div>
+
+                    <div>
+                            <label>Họ Và Tên</label>
+                            <input type="text" name="name" value="#"  style="width:310px;" placeholder="Nhap thon tin vao day"/>
+                    </div>
+
+                    <div>
+                            <label>Email</label>
+                            <input type="email" name="mail" value="#"  style="width:310px;" placeholder="abc@gmail.com"/>
+                    </div>
+
+                    <div>
+                            <label>Giới tính</label>
+                            <input type="radio" name="DN" value="#" checked/>Nam
+                            <input type="radio" name="DN" value="#"/>Nữ
+                    </div>
+
+                    <div>
+                        <label style="margin-bottom: 60px;">Quốc gia</label>
+                        <select  style="width:310px;">
+                            <option>-----------------------Viet nam---------------------</option>
+                            <option>Han quoc</option>
+                            <option>my</option>
+                            <option>trung quoc</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label >Ghi chú</label>
+                        <textarea col=33 row=5  style="width:310px; height: 80px;">
+                        </textarea>
+                    </div>
+
+                    <div class="submit">
+                        <input class="submit_bt" type="submit" name="đk" value="Đăng Ký">
+                        <input type="reset" name="bq" value="Bỏ Qua" 
+                    </div>
+
+                    <span>* Phần bắt buộc phải điền</span>
+                    
+                </fieldset>
+            </form>
+        </body>
+</html>
