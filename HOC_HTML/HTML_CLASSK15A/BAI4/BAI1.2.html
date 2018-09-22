@@ -24,20 +24,24 @@
         .navi{padding: 20px 20px 14px 20px;}
         #content_fix_float::after{display: table; clear: both; content: ""}
         h2{color: white; margin: 0px 0px 0px 0px; padding: 20px 0px 13px 0px;}
-        a{text-decoration: none; padding-right: 12px; color: white;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px; }
-        a:hover{ background-color: thistle; border-radius: 6px; border: 1px solid goldenrod;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px;}
+        a{text-decoration: none; padding-right: 12px; padding-left: 12px; color: white;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px; }
+        a:hover{ background-color: rosybrown; border-radius: 16px; border: 1px solid goldenrod;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px;}
         .color_box{color: white; padding-bottom: 5px; line-height: 37px;}
         label{color: white; display: block; }
         input , textarea {width: 400px; background-color: wheat; border-radius: 4px; box-shadow: 2px 2px 2px 2px black; border: 2px solid aquamarine;}
-        .main{padding-top: 17px;}
-        .active{ background-color: thistle; border-radius: 6px; border: 1px solid goldenrod;}
+        .main{padding-top: 17px; padding-bottom: 18px;}
+        .active{ background-color: rosybrown; border-radius: 16px; border: 1px solid goldenrod;}
+        img{width: 466px; height: 466px;}
+        .btn_btn_secondary{color: white; background-color: steelblue; float: left; width: 167px; text-align: center; padding: 3px 3px; border-radius: 16px; margin-right: 22px; text-align: center;}
+        .btn_btn_secondary2{color: white; background-color:springgreen; float: left; width: 167px; text-align: center; padding: 3px 3px; border-radius: 16px;}
+       
     </style>
 </head>
     <body>
         <section>
             <div id="avatar">
                 <div class="navi">
-                    <img class="img_avatar" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-9/39249540_286926658557256_6186122811828862976_n.jpg?_nc_cat=0&oh=44242b5aebdd54e2e789b99f22429bde&oe=5C36F351" alt="ảnh avatar">
+                    <img class="img_avatar" src="./AVATAR.jpg" alt="ảnh avatar">
                 </div>
             </div>
 
@@ -61,7 +65,16 @@
                     </div>
                     <div>
                         <label>Ý kiến của bạn</label>
-                        <textarea rows="14" cols="">Ý kiến của bạn</textarea>
+                        <textarea rows="11" cols="">Ý kiến của bạn...</textarea>
+                    </div>
+                    
+                    <div class="btn_btn_secondary">
+                        <i class="material-icons">send</i>
+                        <span>Gửi phản hồi</span>
+                    </div>
+                    <div class="btn_btn_secondary2">
+                        <i class="material-icons">delete_sweep</i>
+                        <span>Reset nội dung</span>
                     </div>
                 </div>
             </div>
