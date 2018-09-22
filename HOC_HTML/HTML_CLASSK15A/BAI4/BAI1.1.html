@@ -25,12 +25,45 @@
         #content_fix_float::after{display: table; clear: both; content: ""}
         h2{color: white; margin: 0px 0px 0px 0px; padding: 20px 0px 13px 0px;}
         a{text-decoration: none; padding-right: 12px; color: white;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px; }
-        a:hover{ background-color: thistle; border-radius: 6px; border: 1px solid goldenrod; font-family: 'Open Sans Condensed', sans-serif; font-size: 19px;}
+        a:hover{ background-color: thistle; border-radius: 6px; border: 1px solid goldenrod;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px;}
         .color_box{color: white; padding-bottom: 5px; line-height: 37px;}
-        .main{margin-top: 40px;}
-        h4{ display: block; float: left; width: 220px; margin-bottom: 0px; margin-top: 0px;}
+        .canvasjs-chart-canvas{margin-top: 11px;}
         .active{ background-color: thistle; border-radius: 6px; border: 1px solid goldenrod;}
     </style>
+            <script>
+                window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title: {
+        text: "Kinh nghiệm ngôn ngữ",
+	},
+	axisY: {
+		title: "đơn vị đánh giá (%)",
+		suffix: "%",
+		includeZero: false
+	},
+	axisX: {
+		title: "biểu đồ ngôn ngữ"
+	},
+	data: [{
+		type: "column",
+		yValueFormatString: "#,##0.0#\"%\"",
+		dataPoints: [
+			{ label: "HTML", y: 6.10 },	
+			{ label: "CSS", y: 6.11 },	
+			{ label: "Javascript", y: 7.00 },
+			{ label: "jQuery", y: 6.80 },	
+			{ label: "ReactJS", y: 7.77 },
+			{ label: "ReactNative", y: 7.10 },			
+		]
+	}]
+});
+chart.render();
+
+}
+            </script>
 </head>
     <body>
         <section>
@@ -45,47 +78,13 @@
                         <h2>Kim Tuân</h2>
                 </div>
                 <div class="buttom_link">
-                   <a href="BAI1.html" class="active" target="_blank" rel="home">Tổng quan</a>
-                   <a href="BAI1.1.html" target="_blank" rel="home">Kinh nghiệm</a>
+                   <a href="BAI1.html" target="_blank" rel="home">Tổng quan</a>
+                   <a href="BAI1.1.html" class="active" target="_blank" rel="home">Kinh nghiệm</a>
                    <a href="BAI1.2.html" target="_blank" rel="home">Phản hồi</a>
                 </div>
                 <div  class="main">
-                   <div class="color_box">
-                       <h4>Cao:</h4>
-                       <span>1m72</span>
-                   </div>
-                   <div class="color_box">
-                        <h4>Cân nặng:</h4>
-                        <span>74kg</span>
-                    </div>
-                    <div class="color_box">
-                        <h4>màu yêu thích:</h4>
-                        <span>black</span>
-                    </div>
-                    <div class="color_box">
-                        <h4>màu không yêu thích:</h4>
-                        <span>red</span>
-                    </div>
-                    <div class="color_box">
-                        <h4>Ngày sinh</h4>
-                        <span>29.01.1998</span>
-                    </div>
-                    <div class="color_box">
-                        <h4>Ngôn ngữ:</h4>
-                        <span>English , viet nam</span>
-                    </div>
-                    <div class="color_box">
-                        <h4>Sở thích:</h4>
-                        <span>ẩm thực, du lịch</span>
-                    </div>
-                    <div class="color_box">
-                        <h4>Follow:</h4>
-                        <i class="material-icons">android</i>
-                        <i class="material-icons">favorite</i>
-                        <i class="material-icons">all_inclusive</i>
-                        <i class="material-icons">verified_user</i>
-                        <i class="material-icons">touch_app</i>
-                    </div>
+                        <div id="chartContainer" style="height: 370px; width: 45%;"></div>
+                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
                 </div>
             </div>
         </section>
