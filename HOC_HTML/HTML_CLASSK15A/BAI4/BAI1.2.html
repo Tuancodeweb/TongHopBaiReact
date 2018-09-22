@@ -9,32 +9,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
     <style>
-        body{
-            background-image: url("./oriental.png");
-            margin: 140px auto;
-            padding: 0px auto;
-            box-sizing: border-box;
-            font-family: 'Dancing Script', cursive;
-            font-size: 24px;
-            max-width: 960px;
-            height: 590px;
-        }
+        body{ background-image: url("./oriental.png");margin: 140px auto;padding: 0px auto;box-sizing: border-box;font-family: 'Dancing Script', cursive;font-size: 24px;max-width: 960px;height: 590px;}
         section{background-color: #161510;box-shadow: 3px 3px 3px 3px black;-moz-box-shadow:3px 3px 3px 3px;-webkit-box-shadow: 3px 3px 3px 3px;-o-box-shadow: 3px 3px 3px 3px;-ms-box-shadow: 3px 3px 3px 3px;}
         #avatar{float: left;}
         .navi{padding: 20px 20px 14px 20px;}
         #content_fix_float::after{display: table; clear: both; content: ""}
         h2{color: white; margin: 0px 0px 0px 0px; padding: 20px 0px 13px 0px;}
-        a{text-decoration: none; padding-right: 12px; padding-left: 12px; color: white;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px; }
-        a:hover{ background-color: rosybrown; border-radius: 16px; border: 1px solid goldenrod;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px;}
+        .link{text-decoration: none; padding-right: 12px; padding-left: 12px; color: white;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px; }
+        .link:hover{ background-color: rosybrown; border-radius: 16px; border: 1px solid goldenrod;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px;}
         .color_box{color: white; padding-bottom: 5px; line-height: 37px;}
         label{color: white; display: block; }
         input , textarea {width: 400px; background-color: wheat; border-radius: 4px; box-shadow: 2px 2px 2px 2px black; border: 2px solid aquamarine;}
         .main{padding-top: 17px; padding-bottom: 18px;}
         .active{ background-color: rosybrown; border-radius: 16px; border: 1px solid goldenrod;}
         img{width: 466px; height: 466px;}
-        .btn_btn_secondary{color: white; background-color: steelblue; float: left; width: 167px; text-align: center; padding: 3px 3px; border-radius: 16px; margin-right: 22px; text-align: center;}
-        .btn_btn_secondary2{color: white; background-color:springgreen; float: left; width: 167px; text-align: center; padding: 3px 3px; border-radius: 16px;}
-       
+        .btn_btn_secondary{color: white; background-color: steelblue; float: left; width: 140px;  text-align: center; padding: 3px 3px 3px 15px; border-radius: 16px;margin-left: 22px; margin-right: 22px; text-align: center;}
+        .btn_btn_secondary2{color: white; background-color:springgreen; float: left; width: 140px;  text-align: center; padding: 3px 3px 3px 15px; border-radius: 16px;}
+        a{color:whitesmoke; text-decoration: none;font-family: 'Open Sans Condensed', sans-serif; font-size: 19px; }
+        .LINK_BUTOM{display: block; float: right; clear: both; width: 115px;}
     </style>
 </head>
     <body>
@@ -50,9 +42,9 @@
                         <h2>Kim Tuân</h2>
                 </div>
                 <div class="buttom_link">
-                   <a href="BAI1.html" target="_parent" rel="home">Tổng quan</a>
-                   <a href="BAI1.1.html" target="_parent" rel="home">Kinh nghiệm</a>
-                   <a href="BAI1.2.html" class="active" target="_parent" rel="home">Phản hồi</a>
+                   <a href="BAI1.html" class="link" target="_parent" rel="home">Tổng quan</a>
+                   <a href="BAI1.1.html" class="link" target="_parent" rel="home">Kinh nghiệm</a>
+                   <a href="BAI1.2.html"  class="active link" target="_parent" rel="home">Phản hồi</a>
                 </div>
                 <div  class="main">
                     <div>
@@ -70,11 +62,11 @@
                     
                     <div class="btn_btn_secondary">
                         <i class="material-icons">send</i>
-                        <span>Gửi phản hồi</span>
+                        <a class="LINK_BUTOM" href="#">Gửi phản hồi</a>
                     </div>
                     <div class="btn_btn_secondary2">
                         <i class="material-icons">delete_sweep</i>
-                        <span>Reset nội dung</span>
+                        <a  class="LINK_BUTOM" href="./BAI1.2.html" type="reset">Reset nội dung</a>
                     </div>
                 </div>
             </div>
