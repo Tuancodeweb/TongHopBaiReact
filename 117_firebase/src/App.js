@@ -29,7 +29,7 @@ class App extends Component {
   //----------------------------- kết thúc pop dữ liệu-------------------//
   
 
-
+// Tiến hàng xóa dữ liệu
 
 
 

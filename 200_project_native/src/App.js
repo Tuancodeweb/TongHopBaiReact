@@ -132,7 +132,7 @@ class App extends Component {
     // fake promise
     setTimeout(() =>
       this.setState({ loading: false })
-    , 8500)
+    , 3000)
   }
   //9
   render() {

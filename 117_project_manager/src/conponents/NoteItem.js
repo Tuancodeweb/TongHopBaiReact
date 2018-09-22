@@ -14,7 +14,7 @@ class NoteItem extends Component {
       deleteData = () => {
         this.props.GetDeleteData(this.props.note.key);
         // console.log(this.props.note);
-        this.props.AlertOn("xóa phần tử" + " " + this.props.note.NoteTitle + " " + "thành công" , "danger");
+        this.props.AlertOn("xóa phần tử".concat().this.props.note.NoteTitle.concat(),"thành công" , "danger");
       }
     render() {
         return (

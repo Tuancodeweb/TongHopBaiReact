@@ -14,6 +14,11 @@ var redux = require('redux');
             // hàm thuộc state showw màu nội dung thông báo
             AlertStyle : ''
         }
+
+
+
+
+
         const allReducer = (state = InitialState, action) => {
             switch (action.type) {
                 case "ADD_DATA":
@@ -54,10 +59,10 @@ var redux = require('redux');
             //6    // lệnh xóa note dựa vào key
                 case "DELETE":
                     console.log(action.deleteID);
-                firebaseUML.child(action.deleteID).remove();
-
+                    firebaseUML.child(action.deleteID).remove();
+                    break;
             //7 // hiển thị thông báo bootstrap , hiển thị nội dung
-                case "ALERT_ON":
+                case "ALERT_ON": 
                 return {...state,AlertShow:true , AlertContent:action.AlertContent ,AlertStyle:action.AlertStyle}
             //8 // tắt  hiển thị thông báo bootstrap
                 case "ALERT_OFF":

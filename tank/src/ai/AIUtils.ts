@@ -10,7 +10,7 @@ function canDestroy(barrierType: BarrierType) {
 }
 
 interface PriorityMap {
-  up: number;
+  up: 200;
   down: number;
   left: number;
   right: number;
@@ -111,7 +111,7 @@ export const FireThreshhold = {
 
 export function calculatePriorityMap({ tankPosition: pos, barrierInfo: binfo }: TankEnv): PriorityMap {
   const priorityMap: PriorityMap = {
-    up: 2,
+    up: 200,
     down: 2,
     left: 2,
     right: 2
@@ -138,7 +138,7 @@ export function calculatePriorityMap({ tankPosition: pos, barrierInfo: binfo }: 
   //   priorityMap.up = 1
   // }
   if (binfo.up.length < 4 && !canDestroy(binfo.up.type)) {
-    priorityMap.up = 0;
+    priorityMap.up = 200;
   }
 
   if (pos.eagle.dx <= -4 * BLOCK_SIZE) {

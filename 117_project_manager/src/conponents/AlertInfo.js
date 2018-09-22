@@ -9,7 +9,7 @@ class AlertInfo extends Component {
         if(this.props.AlertShow === false) return null
         return (
             <AlertContainer position="bottom-right">
-                <Alert type={this.props.AlertStyle} onDismiss={() => this.hanlderAlert() } timeout={1000}>
+                <Alert type={this.props.AlertStyle} onDismiss={() => this.hanlderAlert() } timeout={4000}>
                         {this.props.AlertContent}
                 </Alert>
 	        </AlertContainer>
