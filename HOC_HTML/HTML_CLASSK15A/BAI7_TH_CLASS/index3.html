@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        body{max-width: 960px; height: auto; box-sizing: border-box; margin: 50px auto; padding: 12px auto; font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+        ul{list-style-type: none; padding-top: 9px; }
+        .menu{background-color: orange;  max-width: 100%; height: 50px;}
+        li{display: inline; padding-right: 26px;}
+        .item{display: block; padding-bottom: 20px; border-bottom: 1px solid black}
+        .position{position: absolute;}
+        .position2{ position: relative; padding-left: 12px; top: 18px; background-color: whitesmoke;}
+        .position2{display: none;}
+        .position:hover > ul {display: block;}
+        .menu2{border: none;color:black;padding: 10px;font-size: 18px;border-radius: 5px;position: relative;box-sizing: border-box;}
+        .menu2:before {content:'';position: absolute;top: 0px;left: 0px;width: 0px;height: 49px;background: rgba(255,255,255,0.3);border-radius: 5px;transition: all 2s ease;box-sizing: border-box;}
+        .menu2:hover:before {width: 100%;}
+        
+    </style>
+    <body>
+        <div class="menu">
+                <ul>
+                    <li class="menu2">Trang chủ</li>
+                    <li class="menu2">Mua bán</li>
+                    <li class="menu2">Bất động sản</li>
+                    <li class="menu2">Mua oto</li>
+                    <li class="menu2" style="padding-right: 30px; ">Dự án</li>
+                    <li class="position">khóa học
+                            <ul class="position2">
+                                    <li class="item">HTML5</li>
+                                    <li  class="item">CSS3</li>
+                                    <li  class="item">REACTJS</li>
+                                    <li  class="item">AUGULAR</li>
+                                </ul>
+                    </li class="menu2"> 
+                </ul>
+        </div>
+    </body>
+</html>
