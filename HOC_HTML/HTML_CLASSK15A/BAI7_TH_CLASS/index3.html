@@ -11,7 +11,7 @@
         ul{list-style-type: none; padding-top: 9px; }
         .menu{background-color: orange;  max-width: 100%; height: 50px;}
         li{display: inline; padding-right: 26px;}
-        .item{display: block; padding-bottom: 20px; border-bottom: 1px solid black}
+        .item{display: block; padding: 15px 0px 15px 0px; border-bottom: 1px solid black; position: relative;}
         .position{position: absolute;}
         .position2{ position: relative; padding-left: 12px; top: 18px; background-color: whitesmoke;}
         .position2{display: none;}
@@ -19,6 +19,10 @@
         .menu2{border: none;color:black;padding: 10px;font-size: 18px;border-radius: 5px;position: relative;box-sizing: border-box;}
         .menu2:before {content:'';position: absolute;top: 0px;left: 0px;width: 0px;height: 49px;background: rgba(255,255,255,0.3);border-radius: 5px;transition: all 2s ease;box-sizing: border-box;}
         .menu2:hover:before {width: 100%;}
+        .item2{position: absolute; display: inline; background-color:whitesmoke; display: none;}
+        .item:hover > ul{display: inline;}
+      
+        
         
     </style>
     <body>
@@ -31,10 +35,34 @@
                     <li class="menu2" style="padding-right: 30px; ">Dự án</li>
                     <li class="position">khóa học
                             <ul class="position2">
-                                    <li class="item">HTML5</li>
-                                    <li  class="item">CSS3</li>
-                                    <li  class="item">REACTJS</li>
-                                    <li  class="item">AUGULAR</li>
+                                    <li class="item">HTML5
+                                        <ul class="item2">
+                                            <li>HTML4</li>
+                                            <li>XHTML</li>
+                                            <li>XML</li>
+                                        </ul>
+                                    </li>
+                                    <li  class="item">CSS3
+                                        <ul class="item2">
+                                            <li>CSS core</li>
+                                            <li>bootstrap</li>
+                                            <li>Bootstrap 4 beta</li>
+                                        </ul>
+                                    </li>
+                                    <li  class="item">REACTJS
+                                        <ul class="item2">
+                                            <li>reactjs</li>
+                                            <li>react NATIVE</li>
+                                            <li>Facebook</li>
+                                        </ul>
+                                    </li>
+                                    <li  class="item">AUGULAR
+                                        <ul class="item2">
+                                            <li>augular 7</li>
+                                            <li>augular 8</li>
+                                            <li>augular 0</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                     </li class="menu2"> 
                 </ul>
