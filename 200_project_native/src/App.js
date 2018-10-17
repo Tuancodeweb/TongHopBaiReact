@@ -9,6 +9,7 @@ import Datamusic from './component/DATA.json';
 import {connect} from 'react-redux';
 import AlertInfo from './component/AlertInfo';
 import LoadingScreen from 'react-loading-screen';
+
 const uuidv1 = require('uuid/v1');
 //1
 class App extends Component {

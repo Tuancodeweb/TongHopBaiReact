@@ -1,0 +1,18 @@
+.kl{background-color: rgb(250, 150, 0) ; height: 98px;}
+.col-6  {margin-top: 25px;}
+.col-4{margin-top: 13px;}
+.col-2{margin-top: 13px;}
+.clogo{margin-top: 15px;}
+.text2{font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 500px; text-align: center; width: 210px; } 
+.money{color: peru; padding-left: 72px; font-weight: bold;}
+.product{display: block;}
+.space{margin-right: 28px;}
+.space2{padding-left: 73px;}
+.product{ position: relative;width: 50%;}
+.image{opacity: 1;display: block;height: auto;transition: .5s ease;backface-visibility: hidden;}
+.middle { transition: .5s ease; opacity: 0;width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);text-align: center; }
+.product:hover .image {opacity: 0.3;}
+ .product:hover .middle {opacity: 1;}
+.text { background-color: #4CAF50; color: white; font-size: 16px; padding: 16px 32px;}
+.cc{background-color: rgb(250, 150, 0) ; height: 355px;}
+.cc1{background-color: rgb(255, 103, 0); height: 100px; }
