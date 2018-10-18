@@ -16,3 +16,6 @@
 .text { background-color: #4CAF50; color: white; font-size: 16px; padding: 16px 32px;}
 .cc{background-color: rgb(250, 150, 0) ; height: 355px;}
 .cc1{background-color: rgb(255, 103, 0); height: 100px; }
+.input-group-text{width: 100px;}
+.suadoi{margin-top: 15px;}
+.suadoi2{margin-left: 90px;}
