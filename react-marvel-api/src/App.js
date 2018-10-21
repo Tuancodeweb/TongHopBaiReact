@@ -18,7 +18,7 @@ class App extends Component {
         exactMatch: false,
       }
     },
-    sortName: '',
+    sortName: '',``
     characters: [],
     page: 0,
     maxPage: 0,
