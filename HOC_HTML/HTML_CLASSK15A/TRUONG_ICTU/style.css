@@ -1,0 +1,89 @@
+body {
+  max-width: 960px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 50px auto;
+  padding: 0px auto;
+}
+
+body #background {
+  width: 363px;
+  height: 505px;
+  background-image: url("./img/folk-pattern-black.png");
+  padding-top: 45px;
+  padding-bottom: 0px;
+}
+
+body #background .box1 {
+  width: 293px;
+  height: 450px;
+  background-color: #121317;
+  margin-left: 34px;
+}
+
+body #background .box1 .content, body #background .box1 .input_box {
+  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body #background .box1 .content .title, body #background .box1 .input_box .title {
+  padding-top: 35px;
+  color: #747373;
+  display: block;
+  float: left;
+  clear: both;
+  width: 190px;
+}
+
+body #background .box1 .content img, body #background .box1 .input_box img {
+  padding-top: 37px;
+}
+
+body #background .box1 .input_box .INbox1, body #background .box1 .input_box .INbox2 {
+  background-color: #18191e;
+  color: #908d8e;
+  font-weight: bold;
+  height: 47px;
+  padding-top: 13px;
+}
+
+body #background .box1 .input_box .INbox1 span, body #background .box1 .input_box .INbox2 span {
+  display: block;
+  float: left;
+  clear: both;
+  width: 210px;
+  padding-left: 12px;
+}
+
+body #background .box1 .input_box .INbox1 i, body #background .box1 .input_box .INbox2 i {
+  width: 20px;
+}
+
+body #background .box1 .input_box .button {
+  background-color: #d29d41;
+  text-align: center;
+  color: #7d542a;
+  font-weight: bold;
+  height: 47px;
+  padding-top: 13px;
+}
+
+body #background .box1 .input_box .info {
+  padding-top: 14px;
+}
+
+body #background .box1 .input_box .info .text_footer1 {
+  font-size: 12px;
+  color: #6a696a;
+  padding-right: 15px;
+}
+
+body #background .box1 .input_box .info .text_footer2 {
+  font-size: 12px;
+  color: #d29d41;
+}
+/*# sourceMappingURL=style.css.map */

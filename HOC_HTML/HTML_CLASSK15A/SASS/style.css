@@ -1,0 +1,46 @@
+.demo2, .demo5 {
+  background-color: red;
+}
+
+.demo3 {
+  background-color: blue;
+}
+
+.demo4 {
+  background-color: violet;
+}
+
+.demo2, .demo5 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.demo3 {
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+}
+
+.demo4 {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+}
+
+.demo .demo2, .demo .demo5 {
+  width: 50px;
+  height: 50px;
+}
+
+.demo .demo2 .demo3, .demo .demo5 .demo3 {
+  width: 70px;
+  height: 70px;
+}
+
+.demo7 {
+  width: 100px;
+  height: 110px;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

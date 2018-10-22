@@ -1,0 +1,119 @@
+
+@mixin background_color($size1 , $size2 ,$img) {
+    width: $size1;
+    height: $size2;
+    background-image: $img;
+}
+@mixin background_color2($size3 , $size4 , $color) {
+    width:$size3 ;
+    height: $size4;
+    background-color: $color;
+}
+@mixin title_padding($size5 , $size6) 
+{
+    padding-top: $size5;
+    padding-left: $size6;
+    padding-right: $size6;
+}
+
+
+$fornt-text : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$color-text :rgb(116 , 115 , 115);
+$color-text2 : rgb(125 , 84 , 42);
+$color-text3 : rgb(144 , 141 , 142);
+
+
+
+
+
+body{
+    max-width: 960px;
+    height: auto;
+    box-sizing: border-box;
+    font-family: $fornt-text;
+    margin: 50px auto;
+    padding: 0px auto;
+    
+    #background
+    {
+      
+        @include background_color(363px,505px,url("./img/folk-pattern-black.png"));
+        padding-top: 45px;
+        padding-bottom: 0px;
+        .box1
+        {
+            @include background_color2(293px , 450px ,  rgb(18,19,23) );
+            margin-left: 34px;
+            .content
+            {
+                padding-bottom: 30px;
+                @include title_padding(10px , 20px);
+                .title
+                {
+                    padding-top: 35px;
+                    color: $color-text;
+                    display: block;
+                    float: left;
+                    clear: both;
+                    width: 190px;
+                }
+                img
+                {
+                   padding-top: 37px;
+                }
+            }
+            .input_box
+            {
+                @extend .content;
+                .INbox1
+                {
+                    background-color: rgb(24, 25, 30);
+                    color: $color-text3;
+                    font-weight: bold;
+                    height: 47px;
+                    padding-top: 13px;
+                    span
+                    {
+                        display: block;
+                        float: left;
+                        clear: both;
+                        width: 210px;
+                        padding-left: 12px;
+                    }
+                    i
+                    {
+                        width: 20px;
+                    }
+                }
+                .INbox2
+                {
+                    @extend .INbox1;
+                }
+                .button
+                {
+                    background-color: rgb(210, 157, 65);
+                    text-align: center;
+                    color: $color-text2;
+                    font-weight: bold;
+                    height: 47px;
+                    padding-top: 13px;
+                }
+                .info
+                {
+                    padding-top: 14px;
+                    .text_footer1
+                    {
+                        font-size: 12px;
+                        color: rgb(106, 105, 106);
+                        padding-right: 15px;
+                    }
+                    .text_footer2
+                    {
+                        font-size: 12px;
+                        color: rgb(210, 157, 65);
+                    }
+                }
+            }
+        }
+    }
+}
