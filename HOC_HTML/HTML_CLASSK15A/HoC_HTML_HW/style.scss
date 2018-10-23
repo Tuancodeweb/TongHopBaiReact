@@ -1,0 +1,14 @@
+$day_la_bien_so_1 : red;
+
+.box_cha{
+    background-color: $day_la_bien_so_1;
+}
+
+@mixin day_la_minxin1($chieudai , $chieurong) {
+    width: $chieudai;
+    height: $chieurong;
+}
+
+.box1{
+    @include day_la_minxin1(50px, 50px)
+}
