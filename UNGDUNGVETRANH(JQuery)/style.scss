@@ -1,0 +1,121 @@
+$color1 :  hsl(0.0, 0.0%, 50.2%);
+    $color2 : rgba(245, 245, 245, 1.0);
+        $color3 : rgba(200, 0, 0, 1.0); 
+            $color4 : hsl(200.0, 100.0%, 50.0%);
+                $color5 : rgb(200, 255, 0); 
+                    $color6 : rgb(255, 255, 255);
+                
+$box1 : border-box;
+$browse : 2px 2px 2px #eee;   
+
+// nested
+
+
+// cros site scripting
+// mixin from body
+@mixin box_body($size_body_one , $size_body_two)
+{
+    max-width: $size_body_one;
+    max-height: $size_body_two;
+}
+@mixin box_body_paragrap ($size_font   ,  $style_font) {
+    font-size: $size_font;
+    font-family: $style_font;
+}
+
+
+// mixin from color _ mix
+@mixin color_mix($size_border , $size_MMD) {
+    border-top-left-radius: $size_border;
+	border-top-right-radius:  $size_border;
+	border-bottom-right-radius:  $size_border;
+	border-bottom-left-radius:  $size_border;
+	width: $size_MMD;
+	height: $size_MMD;
+}
+body
+{
+    background-color: $color1;
+    margin: 10px auto;
+    padding: 0px;
+    box-sizing: $box1;
+    @include box_body(800px , 500px );
+    @include box_body_paragrap(18px , 'tahoma', sans-serif );
+    canvas
+    {
+        background-color: $color2;
+        border-radius: 10px;
+        background: #eee;
+        box-shadow: $browse;
+        -moz-box-shadow: $browse;
+        -webkit-box-shadow: $browse;
+        padding: 10px;
+        margin-right: 12px; 
+        .controls
+        {
+            text-align: center;
+            ul
+            {
+                .red
+                {
+                    background-color: $color4;
+                    @include color_mix(50% , 50px );
+                }
+                .blue
+                {
+                    background-color: $color5;
+                    @include color_mix(50% , 50px );
+                }
+                .yellow
+                {
+                    background-color: $color6;
+                    @include color_mix(50% , 50px );
+                }
+                .selected
+                {
+                    border: 2px solid rgb(255, 255, 255);
+                }
+            }
+            .red
+            {
+                background-color: $color4;
+                @include color_mix(50% , 50px );
+            }
+            .blue
+            {
+                background-color: $color5;
+                @include color_mix(50% , 50px );
+            }
+            .yellow
+            {
+                background-color: $color6;
+                @include color_mix(50% , 50px );
+            }
+            .selected
+            {
+                border: 2px solid rgb(255, 255, 255);
+            }
+            ul
+            {
+                list-style-type: none;
+            	box-sizing: border-box;
+                li
+                {
+                    display: inline;
+                    padding: 10px 20px 10px 20px;
+                    margin-right: 10px;
+                }
+            }
+            #colorSelect
+            {
+                #newcolor
+                {
+                    .sliders
+                    {
+                        
+                    }
+                }
+            }
+        }
+    }
+}

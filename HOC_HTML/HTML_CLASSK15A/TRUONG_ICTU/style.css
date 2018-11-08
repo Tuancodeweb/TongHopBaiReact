@@ -33,8 +33,8 @@ body #background .box1 .content, body #background .box1 .input_box {
 body #background .box1 .content .title, body #background .box1 .input_box .title {
   padding-top: 35px;
   color: #747373;
-  display: block;
   float: left;
+  display: block;
   clear: both;
   width: 190px;
 }
@@ -52,8 +52,8 @@ body #background .box1 .input_box .INbox1, body #background .box1 .input_box .IN
 }
 
 body #background .box1 .input_box .INbox1 span, body #background .box1 .input_box .INbox2 span {
-  display: block;
   float: left;
+  display: block;
   clear: both;
   width: 210px;
   padding-left: 12px;

@@ -16,12 +16,21 @@
     padding-right: $size6;
 }
 
-
+@mixin clear_both($float1 , $display , $clear , $width) {
+    float: $float1;
+    display: $display;
+    clear: $clear;
+    width: $width;
+}
+@mixin float_element($contain , $display , $clear2) {
+    contain: $content;
+    display: $display;
+    clear: $clear2;
+}
 $fornt-text : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $color-text :rgb(116 , 115 , 115);
 $color-text2 : rgb(125 , 84 , 42);
 $color-text3 : rgb(144 , 141 , 142);
-
 
 
 
@@ -52,10 +61,7 @@ body{
                 {
                     padding-top: 35px;
                     color: $color-text;
-                    display: block;
-                    float: left;
-                    clear: both;
-                    width: 190px;
+                    @include clear_both(left , block , both , 190px);
                 }
                 img
                 {
@@ -74,10 +80,7 @@ body{
                     padding-top: 13px;
                     span
                     {
-                        display: block;
-                        float: left;
-                        clear: both;
-                        width: 210px;
+                        @include clear_both(left , block , both , 210px);
                         padding-left: 12px;
                     }
                     i

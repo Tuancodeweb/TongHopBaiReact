@@ -1,0 +1,169 @@
+__________________________________________________________________
+B1 đăng ký sự kiện click trên ô màu
+
+lưu đồ thuật toán ở hình [luudoB1]
+
+(trong project này ta phải tìm được một hàm có khả năng xóa được selected)
+
+1. thằng selected đang kiểm soát cái vòng trắng để chọn màu
+
+2. thằng selected nếu khi user click sang màu khác thì selected phải ở vị trí userClick thì mới chân thực
+
+[hàm .removeClass] sẽ cho ta xóa class selected
+[hàm .css] để thêm một property từ ngoài vào
+
+khi học ấn vào newcolor ta sẽ hiện thanh Slibar
+$("#revealcolorSelect").click(function(event) 
+	{
+		/* Act on the event */
+		if($("#colorSelect").css("display") === "none" )
+		{
+			$("#colorSelect").show();
+		}
+		else
+		{
+			$("#colorSelect").hide();
+		}
+	});
+
+_________________________________________________________________
+B2 giúp user pha màu ở thanh pha màu
+
+ta phải xem có tự thay đổi gì ở các thanh pha màu k
+ta dùng sự kiện [.change] để xem có hành động ở slider pha màu k
+
+$("input[type=range]").change(function(event) 
+	{
+		/* Act on the event */
+		var Red = $("#red").val();
+		var Green = $("#green").val();
+		var Blue = $("#blue").val();
+
+		$("#newcolor").css("background-color","rgb("+ Red +","+ Green +" , "+ Blue +")");
+	});
+	
+
+	tại sao lại có dòng   	
+	var Red = $("#red").val(); 
+	  vì ta muốn nấy giá trị value của nó khi họ kéo thanh trượt tức là họ đã thay đổi value của nó
+
+
+
+		$("#newcolor").css("background-color","rgb("+ Red +","+ Green +" , "+ Blue +")");
+
+		đây là trạng thái ghép màu trong CSS
+___________________________________________________________________________________
+B3 khi user lick vào nút Add color thì ta thêm màu user chọn vào ô màu khởi tạo gốc
+cái này ta phải gọi riêng ra một function để tiện khai báo chức năng 
+
+khi mà màu mới được thêm thì thằng selected sẽ tự động click và khoanh vùng màu đó
+
+
+function EventClickcolor ($param) 
+{
+	// body...
+	// xóa thằng selected cũ
+	 $(".controls").find('.selected').removeClass('selected');
+
+		$param.addClass('selected');
+
+		color=$param.css("background-color");
+}
+
+
+
+
+$("#addColor").click(function(event) 
+	{
+		var Red = $("#red").val();
+		var Green = $("#green").val();
+		var Blue = $("#blue").val();
+
+		/* Act on the event */
+		var $addlinew = $('<li></li>');
+
+		$addlinew.css("background-color","rgb("+ Red +","+ Green +" , "+ Blue +")");
+
+		$(".controls").children('ul').append($addlinew);
+
+
+
+
+		$addlinew.click(function() 
+		{
+			 EventClickcolor ($(this)) ;
+		});
+		$addlinew.click();
+
+	});
+
+
+_________________________________________________________________
+tìm hiểu về <canvas>
+
+<1> XÁC ĐỊNH CANVAS NÀO ĐƯỢC VẼ
+
+var canvas = $("canvas")[i];
+var canvas = $("#canvas")[0];
+đã dùng ID lại còn truy xuất vào phần tử đầu tiên trong kiểu 
+mảng? 
+sau khi thực hiện hàm Jquery trả về đối tượng Jquery đối tượng 
+
+này chứa 1 ds phần tử nó như mảng  ta chọn là 0 cho đúng cú pháp4
+ ta muốn truy xuất đến canvas
+
+
+<2> TẠO ĐỐI TƯỢNG VẼ
+ var context = $canvas.getcontext("2d");
+
+
+<3>VẼ TRÊN CANVAS
+context.strokeStyle = "#fffff" ;
+chọn màu cần vẽ
+
+<4> TỌA ĐỘ VẼ
+
+context.moveTo(x,y) 
+X: tung độ
+Y: hoành độ
+
+
+<5> VẼ MỘT ĐƯỜNG THẲNG
+context.lineto(x,y)
+nó sẽ vẽ một đường thẳng từ điểm hiện tại đến điểm X ,Y
+
+
+<6> VẼ HÌNH CHỮ NHẬT
+cotext.fillRect(x , y , x , y)
+
+
+
+_________________________________________________________________
+Lưu đồ thuật toán khi có canvas
+
+hình ảnh canvas ta phải sử lý xem 
+1; User có click chuột trái không
+2; User có di chuyển chuột không
+3; vẽ một đường tọa lạc cho User
+
+
+Lưu Ý
+var $canvas = $("canvas")[0];
+
+thì đối tượng trả về là 1 element không phải là
+
+JQuery đoạn này sẽ lỗi bởi vì JQUERY + ARRAY sẽ ra
+ELEMENT
+
+
+Lưu Ý 2
+ta phải biến canvas từ element thông thường thành Jquery
+để thực thi mã nguồn có chứa hàm sự kiện MAUSDOW
+
+kí thuật đó là $(canvas)
+
+
+Lưu Ý 2 
+ta phải cập nhật biến LastEvent nếu không nó sẽ vẽ không dứt hình
+
+

@@ -1,0 +1,70 @@
+.header1{
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.nav1{
+    background-color: aliceblue;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.section{
+    background-image: url("https://anhdephd.com/wp-content/uploads/2018/04/hinh-nen-4k-anime-Miku.jpg");
+    padding-bottom: 50px;
+}
+.section2{
+    background-image: url("https://i.ytimg.com/vi/A__MLI-T7BU/maxresdefault.jpg");
+    padding-bottom: 50px;
+}
+.section3{
+    background-image: url("https://avatars.mds.yandex.net/get-pdb/788379/6b6937b1-2a6d-445a-bc00-bc85785bc995/orig");
+    padding-bottom: 50px;
+}
+
+
+
+/* navigation  ---nav1 */
+.nav-link{
+    color: black;
+}
+
+
+
+
+span{
+    font-size:15px;
+}
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:gray;
+    border-radius:0;
+    padding:60px 10px;
+}
+
+.box-part2{
+    background:green;
+    border-radius:0;
+    padding:60px 10px;
+}
+
+.box-part3{
+    background:orange;
+    border-radius:0;
+    padding:60px 10px;
+}
+.box-part4{
+    background:wheat ;
+    border-radius:0;
+    padding:60px 10px;
+}
+
+
+.fa{
+     color:#black;
+}
+
+

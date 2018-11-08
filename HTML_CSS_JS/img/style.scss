@@ -1,0 +1,45 @@
+// quy tắc biến (quy tắc đặt biến)
+
+$var_1 : red;
+$var_2 : blue;
+.box1
+{
+    background-color: $var_1;
+    width: 50px;
+    height: 50px;
+}
+.box2
+{
+    background-color: $var_2;
+    width: 50px;
+    height: 50px;
+}
+
+// quy tắc mixin 
+@mixin backgroundcolor($size1 , $size2) {
+    width: $size1;
+    height: $size2;
+}
+.box3
+{
+    @include backgroundcolor(70px , 50px);
+    background-color : $var_1;
+}
+// quy tac kế thừa
+.box4
+{
+    @extend .box1;
+}
+// quy nested (quy tắc lồng nhau)
+.box
+{
+    .box1{
+        .paragrap{
+
+        }
+    }
+    .box2{
+
+    }
+}
+// quy tac function

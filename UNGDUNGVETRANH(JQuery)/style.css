@@ -1,0 +1,110 @@
+body
+{
+	background-color: hsl(0.0, 0.0%, 50.2%);  /*  var backgroundcoder */
+	margin: 10px auto;
+	padding: 0px;
+	box-sizing: border-box;
+	max-width: 800px;
+	max-height: 500px;
+	font-size: 18px;
+	font-family: 'tahoma', sans-serif;
+
+}
+canvas
+{
+	background-color: rgba(245, 245, 245, 1.0);  /*  var backgroundcoder */
+	border-radius: 10px;
+	background: #eee;
+	box-shadow: 2px 2px 2px #eee;
+	-moz-box-shadow: 2px 2px 2px #eee;
+	-webkit-box-shadow: 2px 2px 2px #eee;
+	padding: 10px;
+	margin-right: 12px; 
+}
+ul
+{
+	list-style-type: none;
+	box-sizing: border-box;
+}
+li
+{
+	display: inline;
+	padding: 10px 20px 10px 20px;
+	margin-right: 10px;
+
+}
+.red
+{
+	background-color: rgba(200, 0, 0, 1.0);  /*  var backgroundcoder */
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.blue
+{
+	background-color: hsl(200.0, 100.0%, 50.0%); /*  var backgroundcoder */
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	width: 50px;
+	height: 50px;
+	
+}
+.yellow
+{
+	background-color: rgb(200, 255, 0);  /*  var backgroundcoder */
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.selected
+{
+	border: 2px solid rgb(255, 255, 255);
+}
+.controls
+{
+	text-align: center;
+}
+#revealcolorSelect
+{
+	color: white;
+	padding: 20px 20px 20px 20px;
+	margin:10px auto;
+	background-color: green;
+	font-size: 20px;
+	border-radius: 15px;
+	position: relative;
+	left: 9px;
+	box-shadow: 2px 2px 2px #eee;
+	-moz-box-shadow: 2px 2px 2px #eee;
+	-webkit-box-shadow: 2px 2px 2px #eee;
+}
+#newcolor
+{
+	float: left;
+    background-color: hsl(0.0, 0.0%, 0.0%); /*  var backgroundcoder */
+    padding: 50px 50px 50px 50px;
+    position: relative;
+    left: 120px;
+}
+#addColor
+{
+	color: white;
+	padding: 20px 20px 20px 20px;
+	margin:10px auto;
+	background-color: green;
+	font-size: 20px;
+	border-radius: 15px;
+	position: relative;
+	left: 9px;
+	box-shadow: 2px 2px 2px #eee;
+	-moz-box-shadow: 2px 2px 2px #eee;
+	-webkit-box-shadow: 2px 2px 2px #eee;
+}

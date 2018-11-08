@@ -37,7 +37,7 @@ class App extends React.Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
-        error: "Please enter the values."
+        error: "Vui lòng nhập các giá trị khác"
       });
     }
   }
