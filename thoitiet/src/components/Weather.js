@@ -2,6 +2,11 @@ import React from "react";
 
 const Weather = props => (
 	<div className="weather__info">
+	{ 	
+		props.id && <p className="weather__key">Mã số khách: 
+			<span className="weather__value"> { props.id } </span>
+		</p> 
+	}
 	 {	
 	 	props.city && props.country && <p className="weather__key"> Vị trí: 
 	 		<span className="weather__value"> { props.city }, { props.country }</span>
@@ -18,15 +23,27 @@ const Weather = props => (
 	 	</p> 
 	 }
 	 { 	
-	 	props.description && <p className="weather__key">thời tiết: 
-	 		<span className="weather__value"> { props.description } </span>
-	 </p> 
+	 	props.description  &&  props.icon &&<p className="weather__key">thời tiết: 
+	 		<span className="weather__value"> { props.description } </span><img src="http://openweathermap.org/img/w/10d.png"/>
+	 	</p> 
 	 }
-	 { 
-	 	props.error && <p className="weather__error">{ props.error }</p>  
-	 }
-	 <iframe width="500" height="300" src="https://embed.windy.com/embed2.html?lat=18.021&lon=105.864&zoom=5&level=surface&overlay=wind&menu=&message=true&marker=true&calendar=24&pressure=true&type=map&location=coordinates&detail=&detailLat=21.593&detailLon=105.844&metricWind=m%2Fs&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+	 { 	
+		props.temp_max && <p className="weather__key">Nhiệt độ cao nhất: 
+			<span className="weather__value"> { props.temp_max } </span><span>Độ C</span>
+		</p> 
+	}
+	{ 	
+		props.temp_min && <p className="weather__key">Nhiệt độ thấp nhất: 
+			<span className="weather__value"> { props.temp_min } </span><span>Độ C</span>
+		</p> 
+	}
+	{ 	
+		props.wind && <p className="weather__key">Tốc độ gió: 
+			<span className="weather__value"> { props.wind } </span><span>m/s</span>
+		</p> 
+	}
 	</div>
 );
 
 export default Weather;
+
