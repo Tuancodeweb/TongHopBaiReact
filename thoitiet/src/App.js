@@ -11,7 +11,7 @@ class App extends React.Component {
     id : undefined,
     temperature: undefined,
     city: undefined,
- 
+    country: undefined,
     humidity: undefined,
     description: undefined,
     temp_max : undefined,
@@ -23,10 +23,11 @@ class App extends React.Component {
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value;
-    const country = e.target.elements.country.value;
+  
+    // const country = e.target.elements.country.value;
     const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&cnt=7&appid=${API_KEY}&units=metric`);
     const data = await api_call.json();
-    if (city && country) {
+    if (city) {
       this.setState({
 
         id: data.id,
@@ -72,7 +73,7 @@ class App extends React.Component {
                 <div class="d-flex justify-content-end">
                   <Form getWeather={this.getWeather} />
                   <Weather 
-                   
+                    id = {this.state.id}
                     temperature={this.state.temperature} 
                     humidity={this.state.humidity}
                     city={this.state.city}

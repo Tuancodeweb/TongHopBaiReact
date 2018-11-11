@@ -7,6 +7,11 @@ const Weather = props => (
 			<span className="weather__value"> { props.id } </span>
 		</p> 
 	}
+	{ 	
+	props.country && <p className="weather__key">Quốc gia: 
+			<span className="weather__value"> { props.country } </span>
+		</p> 
+	}
 	 {	
 	 	props.city && props.country && <p className="weather__key"> Vị trí: 
 	 		<span className="weather__value"> { props.city }, { props.country }</span>
