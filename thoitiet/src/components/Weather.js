@@ -25,6 +25,7 @@ const Weather = props => (
 	 { 
 	 	props.error && <p className="weather__error">{ props.error }</p>  
 	 }
+	 <iframe width="500" height="300" src="https://embed.windy.com/embed2.html?lat=18.021&lon=105.864&zoom=5&level=surface&overlay=wind&menu=&message=true&marker=true&calendar=24&pressure=true&type=map&location=coordinates&detail=&detailLat=21.593&detailLon=105.844&metricWind=m%2Fs&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
 	</div>
 );
 
