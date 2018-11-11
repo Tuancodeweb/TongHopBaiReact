@@ -3,7 +3,7 @@ import React from "react";
 const Weather = props => (
 	<div className="weather__info">
 	{ 	
-		props.id && <p className="weather__key">Mã số khách: 
+		props.id && <p className="weather__key">Mã số địa điểm: 
 			<span className="weather__value"> { props.id } </span>
 		</p> 
 	}
