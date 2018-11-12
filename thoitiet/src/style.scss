@@ -1,43 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-
-
-
-
-
-
-
 $font_text2 : 'Roboto Slab', serif;
 $font_text : "Open Sans", serif;
 $font_text3 : "Merriweather", serif;
-
-
-
-
-
-
-
-
-
-
-
 $background_view : linear-gradient(to right, #e67e22, #e74c3c);
 $background_color : #fff;
 $background_color2 :  #000;
 $background_color3 : #2c3e50;
 $background_color4 : #f16051;
-
-
-
-
-
-
-
-
-
-
-
 @function congdon($value)
 {
     @return ($value + 20vh);
@@ -124,7 +95,7 @@ body
                 height: congdon(70vh);
                 @include pading(30px, 50px );
 
-                // ô nhập địa danh vs quốc gia
+                // ô nhập địa danh 
                 input[type="text"] 
                 {
                     background-color: transparent;
