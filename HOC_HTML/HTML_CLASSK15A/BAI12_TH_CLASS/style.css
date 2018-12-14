@@ -1,0 +1,27 @@
+body
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 0px;
+  max-width: 967px;
+  height: auto;
+}
+.box_left
+{
+  float: left;
+  
+}
+.box_right
+{
+  float: left;
+  
+}
+.ROS
+{
+  text-align: center;
+}
+th, td, tr{
+  border: 1px solid;
+}

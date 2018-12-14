@@ -5,7 +5,8 @@ $font_text2 : 'Roboto Slab', serif;
 $font_text : "Open Sans", serif;
 $font_text3 : "Merriweather", serif;
 $background_view : linear-gradient(to right, #e67e22, #e74c3c);
-$background_color : #fff;
+$background_color : #2c3e50;
+$background_colorX : #fff;
 $background_color2 :  #000;
 $background_color3 : #2c3e50;
 $background_color4 : #f16051;
@@ -43,27 +44,32 @@ body
     .wrapper 
     {
         background: $background_view;
-        height: congdon(80vh);
+        height: 100vh;
         display: flex;
-        @include justify_aligin(center);
+        justify-content: center;
+        align-items: center;
+    
         .main
         {
-            height: congdon(70vh);
+
+            height: auto;
             background: $background_color;
             box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
-            width: 60%;
+            width: auto;
             margin: 0 auto;
 
             // left_view bên trái
             .title-container
             {
-                height: congdon(70vh);
+                height: auto;
                 background: url("img/bg.jpg") center center no-repeat;
                 background-size: cover;
                 display: flex;
-                @include justify_aligin(center);
+                align-items: center;
+                justify-content: center;
                 text-align: center;
-                color: $background_color2;
+                color: #000;
+             
                 .title-container__title 
                 {
                     font-size: 50px;
@@ -73,10 +79,7 @@ body
                 }
                 .map
                 {
-                    width: 480px;
-                    height: 510px;
-                    letter-spacing: 2px;
-                    line-height: 1.3;
+                  
                 }
                 .title-container__subtitle 
                 {
@@ -85,23 +88,21 @@ body
                     letter-spacing: 1px;
                     line-height: 1.5;
                     font-family: $font_text3;
-                    font-size: 15px;
-                  }
+                }
             }
             // right_view bên phải
             .form-container
             {
-                background-color: $background_color3;
-                height: congdon(70vh);
-                @include pading(30px, 50px );
-
+               
+                padding-top: 20px;
+                padding-left: 50px;
                 // ô nhập địa danh 
                 input[type="text"] 
                 {
                     background-color: transparent;
                     border: 0;
-                    border-bottom: solid 1px $background_color4;
-                    width: 30%;
+                    border-bottom: solid 1px #f16051;
+                    width: 40%;
                     padding-bottom: 4px;
                     color: $background_color !important;
                     font-weight: lighter;
@@ -109,14 +110,13 @@ body
                     margin-bottom: 30px;
                     margin-right: 20px;
                     font-size: 20px;
-                    width: 500px;
                 }
                 input[type="text"] 
                 { 
                     outline: none;
                 }
                 input:-webkit-autofill {
-                    -webkit-box-shadow: 0 0 0 30px #2c3e50 inset;
+                    -webkit-box-shadow: 0 0 0 30px #fff inset;
                     -webkit-text-fill-color: #fff !important;
                 }
 
@@ -158,8 +158,8 @@ body
                 .weather__key 
                 {
                     color: $background_color4;
-                    border-bottom: solid 2px rgba(255,255,255,0.06);
-                    padding: 10px 0 10px 0;
+                    border-bottom: solid 1px rgba(255,255,255,0.06);
+                    
                     font-weight: 400;
                 }
                   
@@ -170,7 +170,7 @@ body
                   
                   .weather__value 
                   {
-                    color: $background_color;
+                    color: $background_colorX;
                     @include view_data(0px,20px ,200 );
                   }
                   

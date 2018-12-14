@@ -1,8 +1,12 @@
 import React from "react";
+import { navigation_B } from "./components/navigation_B";
+import { Header_B } from "./components/Header_B";
+import { Services_B } from "./components/Services_B";
+import { Grid } from "./components/Grid";
 
-import Titles from "./components/Titles";
-import Form from "./components/Form";
-import Weather from "./components/Weather";
+// import Titles from "./components/Titles";
+// import Form from "./components/Form";
+// import Weather from "./components/Weather";
 
 const API_KEY = "23de0e24cbcc499f500b127c6150bfc8";
 
@@ -18,7 +22,10 @@ class App extends React.Component {
     temp_min : undefined,
     icon : undefined,
     wind : undefined,
+    clould : undefined,
+    base : undefined,
     error: undefined
+    
   }
   getWeather = async (e) => {
     e.preventDefault();
@@ -40,6 +47,8 @@ class App extends React.Component {
         temp_min : data.main.temp_min,
         icon : data.weather[0].icon,
         wind : data.wind.speed,
+        clould : data.clouds.all,
+        base : data.base,
         error: ""
       });
     } else {
@@ -54,6 +63,8 @@ class App extends React.Component {
         temp_min : undefined,
         icon : undefined,
         wind : undefined,
+        clould : undefined,
+        base : undefined,
         error: "Nhập giá trị khác"
       });
     }
@@ -61,36 +72,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="wrapper">
-          <div className="main">
-            <div className="container">
-              <div className="row">
-                <div className="col-xs-5  title-container">
-                    <div class="d-flex justify-content-start"><Titles /></div>
-                 
-                </div>
-                <div className="col-xs-7 form-container">
-                <div class="d-flex justify-content-end">
-                  <Form getWeather={this.getWeather} />
-                  <Weather 
-                    id = {this.state.id}
-                    temperature={this.state.temperature} 
-                    humidity={this.state.humidity}
-                    city={this.state.city}
-                    country={this.state.country}
-                    description={this.state.description}
-                    temp_max = {this.state.temp_max}
-                    temp_min = {this.state.temp_min}
-                    icon = {this.state.icon}
-                    wind = {this.state.wind}
-                    error={this.state.error}
-                  />
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <navigation_B/>
+          <Header_B/>
+            <Services_B/>
+              <Grid/>
       </div>
     );
   }

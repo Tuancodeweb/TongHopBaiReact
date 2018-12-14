@@ -3,7 +3,7 @@ import React from "react";
 const Weather = props => (
 	<div className="weather__info">
 	{ 	
-		props.id && <p className="weather__key">Mã số địa điểmă: 
+		props.id && <p className="weather__key">Mã số địa điểm: 
 			<span className="weather__value"> { props.id } </span>
 		</p> 
 	}
@@ -28,6 +28,17 @@ const Weather = props => (
 	 	</p> 
 	 }
 	 { 	
+		props.clould && <p className="weather__key">Mây che phủ: 
+			<span className="weather__value"> { props.clould } </span><span>%</span>
+		</p> 
+	}
+
+	{ 	
+		props.base && <p className="weather__key">Đo đạc tại: 
+			<span className="weather__value"> { props.base } </span><span>(Trạm đo chung)</span>
+		</p> 
+	}
+	 { 	
 	 	props.description  &&  props.icon &&<p className="weather__key">thời tiết: 
 	 		<span className="weather__value"> { props.description } </span><img src="http://openweathermap.org/img/w/10d.png"/>
 	 	</p> 
@@ -47,6 +58,7 @@ const Weather = props => (
 			<span className="weather__value"> { props.wind } </span><span>m/s</span>
 		</p> 
 	}
+
 	</div>
 );
 
