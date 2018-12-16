@@ -57,7 +57,7 @@ export class RelativePosition {
     this.absdy = Math.abs(this.dy);
   }
 
-  getForwardInfo(direction: Direction) {
+  getForwardInfo(direction: Direction) { //nhận thông tin
     if (direction === 'left') {
       return {
         length: -this.dx,

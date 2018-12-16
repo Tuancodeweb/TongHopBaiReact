@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shop Ban hang</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			float: left;
+			text-align: center;
+			padding: 20px;
+			font: bold;
+        }
+        #product1,#product2{
+            width:120px;height:120px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th,tr td{
+            padding:10px;
+        }
+        select{
+            border:none;
+        }
+	</style>
+</head>
+<body>
+	<div id="product1">
+		<img src="image/assistant-ui_1x.jpg" width="100%" height="100%">
+		<p>Sản Phẩm 1</p>
+		<p id="price1">100000</p>
+		<p><input type="submit" name="" value="Mua Hàng" onclick="buyProd1()"></p>
+	</div>
+	<div id="product2">
+		<img src="image/iPhoneX-Svr.png" width="100%" height="100%">
+		<p>Sản Phẩm 2</p>
+		<p id="price2">500000</p>
+		<p><input type="submit" name="" value="Mua Hàng" onclick="buyProd2()"></p>
+	</div>
+	<div id="cart">
+		<form name="Giỏ hàng">
+			<p>Giỏ hàng</p>
+			<table border="1">
+				<tr>
+					<th class="productName">Tên SP</th>
+					<th class="quantity">SL</th>
+					<th class="price">Giá</th>
+					<th class="total">Thành Tiền</th>
+					<th class="function">Thao tác</th>
+				</tr>
+				<tr id="sanpham1" style="display: none">
+					<td class="productName">Sản Phẩm 1</td>
+					<td class="quantity">
+						<input type='number' value='1' min ='0' style="width:50px;" step = '1' id="quantity1" onmouseup="changePrice1()">
+					</td>
+					<td class="price">100000</td>
+					<td class="total" id="total1">0</td>
+					<td id="function1"><button type='button' onclick='del1()'>x</button></td>
+				</tr>
+				<tr id="sanpham2" style="display: none">
+					<td class="productName">Sản phẩm 2</td>
+					<td class="quantity">
+						<input type='number' value='1' min ='0' style="width:50px;" step = '1' id="quantity2" onmouseup="changePrice12()">
+					</td>
+					<td class="price">500000</td>
+					<td class="total" id="total2">0</td>
+					<td id="function2"><button type='button' onclick='del2()'>x</button></td>
+				</tr>
+				<tr class="tongtien">
+					<td class="productName">Tổng tiền</td>
+					<td class="quantity"> </td>
+					<td class="price"> </td>
+					<td class="total" id="total">0</td>
+					<td class="function"> </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+<script src="kt.js">
+</script>
+</body>
+</html>

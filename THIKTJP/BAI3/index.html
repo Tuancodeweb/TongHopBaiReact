@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <div class="img_product">
+                <div class="margin_img">
+                    <div class="padding_img">
+                        <img class="anh_1" src="./top-nhung-mau-kinh-can-dep-cho-nu-hop-nhat-3.png" alt="product">
+                        <img class="anh_2" id="hover_img"  src="./top-nhung-mau-kinh-can-dep-cho-nu-hop-nhat-3.png" alt="hover" style="width: 50px;  display: none;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="info_product">
+                <div class="margin_info">
+                    <div class="padding_info_money">
+                        <span>$</span><span class="h4" id="price">105.39</span>
+                    </div>
+
+                    <div class="padding_info_sub">
+                        <span>Availability: </span><span class="black_info">In stock</span>
+                    </div>
+
+                    <div class="padding_info_input_number">
+                        <span>Qty</span><input type="number" name="number" value="1" min="0" step="1" style="width:25px;">
+                    </div>
+
+                    <div class="padding_info_input_select1">
+                        <label for="#">Color*</label>
+                        <select name="#" class="select1_info" id="select1">
+                            <option value="">Please,select</option>
+                            <option value="">red</option>
+                            <option value="">blue</option>
+                            <option value="">gray</option>
+                        </select>
+                    </div>
+
+                    <div class="padding_info_input_select2">
+                        <label for="#">Strap Type*</label>
+                        <select name="#" class="select1_info" id="select2">
+                            <option value="">Please,select</option>
+                            <option value="">one man</option>
+                            <option value="">two man</option>
+                            <option value="">ther man</option>
+                        </select>
+                    </div>
+
+                    <div class="padding_info_note">
+                        <span>*Required Fields</span>
+                    </div>
+
+                    <div class="padding_info_booton">
+                        <input type="submit" name="submit" value="Add to cart" onmouseover="hover()"; onclick="buyproduct()" >
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table_card">
+                <table border="1">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr id="sanpham" style="display: none;">
+                        <td class="ProductName">Masta Baby Shop Shirt</td>
+                        <td class="Quantity">
+                            <input type="number"  value="2"  min = '0' style="width:50px;" step = '1' id="quantity" onmouseup="changePrice()" >
+                        </td>
+                        <td class="price">$85.00</td>
+                        <td class="total" id="total1">0</td>
+                        <td  id="function1">
+                            <button type="button" onclick="function1()" >X</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </section>
+        <script src="./app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <section>
+
+                <!-- ảnh sản phẩm-->
+                <div class="img_product">
+                    <div class="margin">
+                        <div class="padding">
+                            <img src="./Capture.PNG" class="img" alt="product">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div  class="info_product">
+                    <div class="margin_info">
+
+                        <div class="padding_info_header">
+                            <h4>Masta Baby Shop Shirt</h4>
+                        </div>
+
+                        <div class="padding_info_monney">
+                            <span class="monney" >$</span><span class="monney" id="price">85</span> <!-- MỤC NÀY 1 NHÁY -->
+                        </div>
+
+                        <div class="padding_info_business">
+                            <span class="black_info">Availabillity: </span><span>Instock</span>
+                        </div>
+
+                        <div class="padding_info_paragrap">
+                            <span class="black_info">Description: </span><span>Bằng một đạo luật tổ chức đặc khu năm 1871, quốc hội đã thiết lập ra một chính quyền mới cho toàn bộ lãnh thổ liên bang. Đạo luật này có hiệu lực kết hợp các thành phố Washington, Georgetown, và Quận Washington thành một đô thị tự quản duy nhất có tên là Đặc khu Columbia.[23] Mặc dù thành phố Washington chính thức kết thúc sau năm 1871 nhưng cái tên của nó vẫn tiếp tục được sử dụng và toàn bộ thành phố bắt đầu được biết đến rộng rãi là Washington, D.C..</span>
+                        </div>
+
+                        <div class="padding_info_color">
+                            <span class="black_info_2">Colors: </span>
+                            <div class="display_inline">
+                                    <div class="black"></div>
+                                    <div class="blue"></div>
+                                    <div class="violet"></div>
+                                    <div class="gold"></div>
+                                    <div class="gray"></div>
+                                    <div class="smoke"></div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="padding_info_size">
+                            <span class="black_info_3">Size: </span>
+                            <ul>
+                                <li><a href="#">XS</a></li>
+                                <li><a href="#">S</a></li>
+                                <li><a href="#">M</a></li>
+                                <li><a href="#">L</a></li>
+                                <li><a href="#">XL</a></li>
+                                <li><a href="#">2XL</a></li>
+                                <li><a href="#">3XL</a></li>
+                                <li><a href="#"s>4XL</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="padding_info_card">
+                            <input class="sl" type="number" name="number" value="" id="quantity" onmouseup="changePrice()" >
+                            <input  class="sm" type="submit" name="" value="ADD TO CARD"  onclick="buyProduct()">
+                        </div>
+
+                        <div class="padding_info_share" >
+                            <a  href="#">ADD TO WISHLIST</a>
+                            <a  href="#">ADD TO COMPARE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table_card">
+                    <table border="1">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr id="sanpham" style="display: none;"> <!-- MỤC NÀY 5 NHÁY -->
+                            <td class="ProductName">Masta Baby Shop Shirt</td>
+                            <td class="Quantity">
+                                <input type="number"  value="1"  min = '0' style="width:50px;" step = '1' id="quantity" onmouseup="changePrice()" > <!-- MỤC NÀY 2 NHÁY -->
+                            </td>
+                            <td class="price">$85.00</td> 
+                            <td class="total" id="total1">0</td> <!-- MỤC NÀY 3 NHÁY -->
+                            <td  id="function1">
+                                <button type="button" onclick="function1()" >X</button> <!-- MỤC NÀY 4 NHÁY -->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>

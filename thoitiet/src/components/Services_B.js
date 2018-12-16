@@ -5,7 +5,7 @@ export class Services_B extends Component {
     return (
       <div>
                         {/* Services */}
-                <section id="services">
+                <section>
                 <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">
@@ -16,24 +16,27 @@ export class Services_B extends Component {
                 <div className="row text-center">
                     <div className="col-md-4">
                     <span className="fa-stack fa-4x">
-                        <i className="fas fa-circle fa-stack-2x text-primary" />
-                        <i className="fas fa-shopping-cart fa-stack-1x fa-inverse" />
+                    <i className="material-icons    big_icon">settings</i>
+                    
                     </span>
                     <h4 className="service-heading">thiết kế</h4>
                     <p className="text-muted">Trang web được thiết kế dẹp thân thiện với người dùng được đội ngũ thiết kế web tạo lên và đánh giá cao hoạt đột trên mọi thiết bị</p>
                     </div>
                     <div className="col-md-4">
                     <span className="fa-stack fa-4x">
-                        <i className="fas fa-circle fa-stack-2x text-primary" />
-                        <i className="fas fa-laptop fa-stack-1x fa-inverse" />
+                    <i className="material-icons  big_icon">
+                    polymer
+                    </i>
+                       
                     </span>
                     <h4 className="service-heading">Dữ liệu</h4>
                     <p className="text-muted">Trang lấy thông tin dữ liệu API openweathermap đảm bảo độ tin cậy cao </p>
                     </div>
                     <div className="col-md-4">
                     <span className="fa-stack fa-4x">
-                        <i className="fas fa-circle fa-stack-2x text-primary" />
-                        <i className="fas fa-lock fa-stack-1x fa-inverse" />
+                    <i className="material-icons big_icon">
+                    copyright
+                    </i>
                     </span>
                     <h4 className="service-heading">Thông tin</h4>
                     <p className="text-muted">được thiết kế trong một thời gian ngắn website liên tục được update và cải tiến những chức năng mới</p>
