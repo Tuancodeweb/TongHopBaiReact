@@ -152,6 +152,15 @@ body
     font-weight: 100;
     width: 150px;
 }
+.sm2
+{
+    height: 35px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    font-weight: 100;
+    width: 250px;
+}
 .padding_info_card
 {
     padding-bottom: 20px;
