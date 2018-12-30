@@ -123,8 +123,7 @@ class App extends React.Component {
               <Modal_B
              
               coord = {this.state.coord}
-              coord2 = {this.state.coord2}
-
+              coord2 = {this.state.coord2
               description={this.state.description}
               icon = {this.state.icon}
               id2 = {this.state.id2}
