@@ -9,7 +9,7 @@
                                 // can thiệp vào nút xóa
                                     var function1 = document.getElementById("function1");
                                             var PO = document.getElementById("PO");
-                                              
+                                                var UI_IMG = document.getElementById("UI_IMG");
 
                                     // sự kiện xóa sản phẩm
                                     var function1 = function()
@@ -76,5 +76,13 @@
                                                 alert("đã hủy mua sản phẩm này");
                                                 sanpham.style.display="none";
                                             }
+                                        }
+                                    }
+                                    
+                                    var hover = function()
+                                    {
+                                        if(UI_IMG.style.transform=="scale(1.5)")
+                                        {
+                                            UI_IMG.style.transform="";
                                         }
                                     }
