@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- <!DOCTYPE LANGLIST SYSTEM "Langlist.dtd">
+<?xml-stylesheet type="text/css" href="xmlstyle.css"?> -->
+<DOCUMENT>
+        <SINHVIEN>
+                <MASOSV>DTC12HD4567</MASOSV>
+                <NAMESV>PHAN KIM TUAN</NAMESV>
+                <MON>
+                    <MAMH>12344</MAMH>
+                    <TENMH>VAY LY DAI CUONG</TENMH>
+                    <TOTAL>9</TOTAL>
+                </MON>
+        </SINHVIEN>
+
+        <SINHVIEN>
+                <MASOSV>DTHD4567</MASOSV>
+                <NAMESV>TRAN VAN HUNG</NAMESV>
+                <MON>
+                    <MAMH>12344SDGDFG</MAMH>
+                    <TENMH>LAP TRINH WEBSITE</TENMH>
+                    <TOTAL>9</TOTAL>
+                </MON>
+        </SINHVIEN>
+
+        <SINHVIEN>
+                <MASOSV>DTC12HD4567SdfSdf</MASOSV>
+                <NAMESV>LA QUYET TAM</NAMESV>
+                <MON>
+                    <MAMH>12344FSDf</MAMH>
+                    <TENMH>TOAN HOC DAI CUONG</TENMH>
+                    <TOTAL>8</TOTAL>
+                </MON>
+        </SINHVIEN>
+</DOCUMENT>

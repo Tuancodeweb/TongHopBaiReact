@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT>
+    <ITEM>
+        <MAKH>dtc1</MAKH>
+        <NAMEKH>TUAN</NAMEKH>
+        <PHONE>0234</PHONE>
+        <LISTPRODUCT>
+            <MHANG>1</MHANG>
+            <TEN>BCS CHONG THAM</TEN>
+            <TOTAL>1</TOTAL>
+            <GIACA>12.000</GIACA>
+        </LISTPRODUCT>
+    </ITEM>
+
+
+     <ITEM>
+        <MAKH>dtc2</MAKH>
+        <NAMEKH>HUNG</NAMEKH>
+        <PHONE>023D4</PHONE>
+        <LISTPRODUCT>
+            <MHANG>2</MHANG>
+            <TEN>BCS KHONH CHONG THAM</TEN>
+            <TOTAL>12</TOTAL>
+            <GIACA>16.000</GIACA>
+        </LISTPRODUCT>
+    </ITEM>
+
+
+     <ITEM>
+        <MAKH>dtc3</MAKH>
+        <NAMEKH>TUAN TU</NAMEKH>
+        <PHONE>0234S</PHONE>
+        <LISTPRODUCT>
+            <MHANG>3</MHANG>
+            <TEN>BCS DEO VAI CHONG THAM</TEN>
+            <TOTAL>19</TOTAL>
+            <GIACA>19.000</GIACA>
+        </LISTPRODUCT>
+    </ITEM>
+</DOCUMENT>

@@ -15,14 +15,14 @@ class App extends Component {
     filters: {
       name: {
         value: '',
-        exactMatch: false,
+        exactMatch: false
       }
     },
-    sortName: '',``
+    sortName: '',
     characters: [],
     page: 0,
     maxPage: 0,
-    limitPerPage: 20,
+    limitPerPage: 20
   };
 
   componentWillMount() {
@@ -32,7 +32,7 @@ class App extends Component {
   changePage = (page) => {
     if (page !== this.state.page) {
       this.search({
-        page,
+        page
       });
     }
   }
@@ -53,6 +53,10 @@ class App extends Component {
       exactMatch: this.filters.state.exactMatch,
     }).then(this.afterFilter);
   }
+
+  // displayMouse = () => {
+  //   this.changPage(maxPage++);
+  // }
 
   search = (options = {}) => {
     this.setState({ loading: true });

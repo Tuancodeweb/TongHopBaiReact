@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT>
+    <INFO>
+        <NAME>Trần Lan Anh</NAME>
+        <DC>Hải phòng</DC>
+        <DATE>12/01/2019</DATE>
+        <PHONE>0987655455</PHONE>
+    </INFO>
+
+    <INFO>
+        <NAME>Vũ Bình Minh</NAME>
+        <DC>Thái Nguyên</DC>
+        <DATE>12/02/2019</DATE>
+        <PHONE>0987655455</PHONE>
+    </INFO>
+
+
+    <INFO>
+        <NAME>Nguyễn Thị Nguyệt</NAME>
+        <DC>hà nam</DC>
+        <DATE>12/03/2019</DATE>
+        <PHONE>0987655455</PHONE>
+    </INFO>
+</DOCUMENT>

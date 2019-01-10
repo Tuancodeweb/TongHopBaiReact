@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE LANGLIST SYSTEM "Langlist.dtd">
+<?xml-stylesheet type="text/css" href="xmlstyle.css"?>
+<DOCUMENT>
+    <HEADER>
+         <NAMETITLE>BẢNG KẾT QUẢ HỌC TẬP </NAMETITLE>
+    </HEADER>
+
+    <INFO>
+        <STUDENT>
+                <NAME>Họ tên:............................................</NAME>
+                <CLASS>Lớp:.................................................</CLASS>
+                <QUE>Quê quán:.......................................</QUE>
+                <KHOA>Khoa:...............................................</KHOA>
+                <PHONE>Số đt:...............................................</PHONE>
+        </STUDENT>
+    </INFO>
+
+    <TOTAL>
+        <TABLE>
+            <HEADING>
+                <CELL>STT</CELL>
+
+                <CELL>Môn học</CELL>
+
+                <CELL>Số tín chỉ</CELL>
+
+                <CELL>Điểm</CELL>
+
+                <CELL>Tích</CELL>
+            </HEADING>
+
+            <ROW>
+                <CELL>1</CELL>
+                <CELL>Lập trình mã nguồn mở</CELL>
+                <CELL>3</CELL>
+                <CELL>9.5</CELL>
+                <CELL>A</CELL>
+            </ROW>
+        </TABLE>
+    </TOTAL>
+
+    <CHUKY>
+        <MASTER>
+            <CHUCVU>Giáo viên chủ nhiệm</CHUCVU>
+            <KI>Tuân</KI>
+            <NAMEFULL>Phan kim tuân</NAMEFULL>
+        </MASTER>
+    </CHUKY>
+</DOCUMENT>
