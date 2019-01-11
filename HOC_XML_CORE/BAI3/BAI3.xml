@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE DOUCMENT[
+    <!ELEMENT DOUCMENT (p*)>
+     <!ELEMENT p (#PCDATA)>
+     ]>
+<DOUCMENT>
+    <p>pHAN TUAN</P>
+     <p>pHAN TUAN WASFASF</P>
+      <p>pHAN TUAN</P>
+</DOUCMENT>

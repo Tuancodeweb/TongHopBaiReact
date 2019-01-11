@@ -66,12 +66,14 @@ class App extends Component {
       exactMatch,
       sortName,
       limit,
+      content_dimaster
     } = Object.assign({
       page: 1,
       name: this.state.filters.name.value,
       exactMatch: this.state.filters.name.exactMatch,
       sortName: this.state.sortName,
       limit: this.state.limitPerPage,
+      content_dimaster: this.state.content_dimaster;
     }, options);
     const offset = page ? (page - 1) * limit : 0;
 
@@ -85,6 +87,7 @@ class App extends Component {
             filters: { name: { value: name, exactMatch } },
             sortName,
             limitPerPage: limit,
+            softwsareMicrosoft : length(page , maxPage);
           });
           resolve({ characters, maxPage, page });
         })
